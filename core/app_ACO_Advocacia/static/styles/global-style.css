@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@400;500;700&family=Quando&display=swap');
+
+:root{
+   /*Color Project*/
+   --bg-head-foo:#1D2637,
+   --bg-main:#D08B81,
+   --color-font:black,
+   /*Color Form*/
+   --bg-content: #dfa399,
+   --bg-input:#ebdad0,
+   --bg-button:#BC7D6F,
+}
+
+*{
+   border: 0px;
+   padding: 0px;
+   margin: 0px;
+   color: --color-font;
+   align-items: center;
+   font-family: "Quando", serif;
+}
+
+body{
+   background-color: #D08B81;
+}
+
+main{
+   margin: auto;
+   height: 100%;
+   width: 80%;
+   background-image: url("../imagens/bg-texture.jpg");
+}
+
+footer{
+   width: 100%;
+   height: auto;
+   position: static;
+   background-color: --bg-head-foo;
+}

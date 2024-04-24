@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>{% block title %}ACO Advocacia{% endblock  %}</title>
+   <link rel="icon" type="image/x-icon" href="{% static 'icons/favicon.ico' %}">
+   <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+</head>
+<body>
+   <header >
+      <div id="Cabecalio">
+         <img src="{% static 'imagens/logo.png' %}" alt="Logo" id="Logo">
+         <nav id="Menu">
+            <span id="conteudo-menu" >
+               <a href="{% url 'index' %}">Home</a>
+               <a href="{% url 'agency' %}">Atuação</a>
+               <a href="{% url 'solutions' %}">Soluções Empresariais</a>
+               <a href="{% url 'politics' %}">Politicas de Privacidade</a>
+               <a href="{% url 'contact' %}">Contato</a>
+            </span>
+         </nav>
+      </div>
+   </header>
+   <main>
+   <div id="conteudo">
+      {% block content %}
+
+
+      {% endblock  %}
+   </div>
+   </main>
+   <footer>
+      <div id="footer-content">
+         <div>
+            <img src="{% static 'imagens/logo.png' %}" alt="Logo" id="Logo-footer">
+         </div>
+         <div id="footer-menu">
+            <a href="{% url 'index' %}">Home</a>
+            <a href="{% url 'agency' %}">Atuação</a>
+            <a href="{% url 'solutions' %}">Soluções Empresariais</a>
+            <a href="{% url 'politics' %}">Politicas de Privacidade</a>
+            <a href="{% url 'contact' %}">Contato</a>
+         </div>
+         <div id="social_midia">
+            <a href="https://www.instagram.com/acoadvocacia/?igsh=MTZkYzJkb2JlZTQwNw%3D%3D" target="_blank">Instagram</a>
+         </div>
+      </div>
+      <div id="dev-content">
+         <p>Direitos Reservados ACO Advocacia © 2024</p>
+         <a href="politicas.html"> Politicas de Privacidade</a>
+      </div>   
+   </footer>
+</body>
+</html>
