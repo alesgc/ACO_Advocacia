@@ -1,0 +1,52 @@
+{% extends "base_page.html" %}
+
+{% load static %}
+
+{% block title %}ACO Advocacia - Contato{% endblock  %}
+
+{% block content %}
+   
+<section class="section-conteudo">
+   <div id="data_consult-content">
+      <h3>SOLICITE UMA CONSULTA</h3>
+         <br>
+         <h4>ENDEREÇO</h4>
+            <br>
+            <p><img src="{% static 'icons/share-location-icon.svg' %}" alt="location">Av. Antônio Mathias de Camargo, 128</p> <br>
+            <p>Sala 12 Centro - Cotia</p> <br>
+            <p>CEP: 06700-250</p> <br>
+         <h4>CONTATO</h4>
+            <br>
+            <h5>Alessandra Nepomuceno de Oliveira</h5> <br>
+               <p><img src="{% static 'icons/certify-icon.svg' %}" alt="certify"> OAB/SP 398672</p> <br>
+               <p><img src="{% static 'icons/phone-icon.svg' %}" alt="phone">   12 99642-9191</p> <br>
+            <h5>Jeferson Mendes de Andrade</h5> <br>
+               <p><img src="{% static 'icons/certify-icon.svg' %}" alt="certify">   OAB/SP419.868</p> <br>
+               <p><img src="{% static 'icons/phone-icon.svg' %}" alt="phone">   11 97119-9647</p> <br>
+            <h5>Luciana Gonçalves de Camargo</h5> <br>
+               <p><img src="{% static 'icons/certify-icon.svg' %}" alt="certify">   OAB/SP430670</p> <br>
+               <p><img src="{% static 'icons/phone-icon.svg' %}" alt="phone">   1197290-8196</p> <br> <br>
+         <h4>HORÁRIO DE ATENDIMENTO</h4>
+            <br>
+            <p>SEGUNDA à Sexta das 9:00  as 17:00</p>
+            <p>Em Caso de Emergências</p>
+            <p>SEGUNDA A DOMINGO - 24HS</p>
+   </div>
+   <div id="content-form">
+      <form method="POST" action=".">
+         {% csrf_token %}
+         <label>Nome: </label>
+         {{ form.name }}
+         <label>Telefone: </label>
+         {{ form.phone }}
+         <label>Email: </label>
+         {{ form.email }}
+         <label>Assunto: </label>
+         {{ form.topic }}
+
+         <button>Enviar</button>
+      </form>
+   </div>
+</section>
+
+{% endblock  %}

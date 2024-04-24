@@ -1,0 +1,2 @@
+git init
+heroku git:remote -a {projeto-nomeado-na plataforma}
