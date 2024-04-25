@@ -1,0 +1,21 @@
+#solutions-content{
+   display: grid;
+   gap: 1em;
+}
+
+#solutions-content h1{
+   font-size: 3rem;
+   margin-bottom: 1.5rem;
+}
+
+#solutions-content h2{
+   font-size: 2rem;
+   padding-left: 1em;
+}
+#solutions-content h3{
+   padding-left: 3em;
+}
+
+#solutions-content p{
+   padding-left: 4em;
+}

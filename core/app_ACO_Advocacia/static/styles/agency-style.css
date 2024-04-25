@@ -1,0 +1,18 @@
+#agency-content{
+   display: grid;
+   gap: 1em;
+}
+
+#agency-content h1{
+   font-size: 3rem;
+   margin-bottom: 1.5rem;
+}
+
+#agency-content h2{
+   font-size: 2rem;
+   padding-left: 1em;
+}
+
+#agency-content p{
+   padding-left: 4em;
+}

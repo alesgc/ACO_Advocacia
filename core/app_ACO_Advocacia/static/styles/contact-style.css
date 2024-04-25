@@ -1,0 +1,61 @@
+.contact-content{
+      display: inline-flex;
+      align-items: flex-start;
+      width: 100%;
+      justify-content: space-around;
+}
+
+
+.consultants-content{
+   display: grid;
+   gap: 1rem;
+}
+
+.consultants-content h3{
+   font-size: 2rem;
+   font-weight: bolder;
+}
+
+.consultants-content h4{
+   font-size: 1.6rem;
+   font-weight: bold;
+}
+
+.address{
+   display : grid; 
+   gap: 1rem; 
+   padding-left: 1.6rem;
+}
+
+.address-content{
+   display: flex;
+   gap: 1em;
+   padding-left: 1em;
+}
+
+.consultants{
+   display: grid;
+   gap: 1rem;
+   padding-left: 1.6rem;
+}
+
+.consultants h5{
+   padding-left: 1rem;
+   font-size: 1.2rem;
+   font-weight: bold;
+}
+
+.consultants p{
+   padding-left: 3rem;
+}
+
+
+.opening-hours{
+   display: grid;
+   gap: 1rem;
+   padding-left: 1.6rem;
+}
+
+.opening-hours p{
+   padding-left: 1rem;
+}
