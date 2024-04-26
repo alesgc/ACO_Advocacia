@@ -33,6 +33,10 @@
    padding-left: 1em;
 }
 
+.address-img img{
+   width: 50px;
+}
+
 .consultants{
    display: grid;
    gap: 1rem;

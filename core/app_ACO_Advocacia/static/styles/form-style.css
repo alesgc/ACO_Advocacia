@@ -1,7 +1,6 @@
 #content-form{
    height: 800px;
    width: 500px;
-   margin-top: 5rem;
    border: 5px var(--form-borde);
    border-radius: 35px;
    padding: 0.5em;
