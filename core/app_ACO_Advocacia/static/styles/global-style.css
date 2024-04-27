@@ -31,36 +31,38 @@
    color: var(--color-font);
    align-items: center;
    font-family: "Quando", serif;
-   font-size: 16px;
+   font-size: 18px;
+   text-decoration: none;
 }
 
 body{
-   background-color: var(--bg-main);
+   background-image: url("../imagens/bg-texture.jpg");
 }
 
-#Cabecalio{
+#header-content{
    display: flex;
    justify-content: space-between;
    background-color: var(--bg-head-foo);   
 }
 
-#Logo{
+#logo{
    margin-inline-start: 10%;
-   height: 128px;
    margin-top: 1%;
    margin-bottom: 1%;
 }
 
-#Menu{
+#logo-img{
+   height: 128px;
+}
+
+#content-menu{
    display: flex;
    justify-content: flex-end;
    margin-inline-end: 11%;
 }
 
-#Menu a {
-   margin-left: 2em; /* Ajuste conforme necessário */
-   text-decoration: none;
-   /*color: #000; /* Cor do texto do link, ajuste conforme necessário */
+#content-menu a {
+   margin-left: 2em;
    font-size: 1.3em;
    color: var(--font-menu);
 }
@@ -69,7 +71,6 @@ body{
    margin: auto;
    height: 100%;
    width: 80%;
-   background-image: url("../imagens/bg-texture.jpg");
 }
 
 #foo-content{
@@ -100,19 +101,20 @@ body{
 #footer-menu a{
    padding-top: 0.4rem;
    padding-bottom: 0.4rem;
-   text-decoration: none;
-   color: var(--font-foo);
+   color: var(--bg-main);
 }
 
 #social_midia{
-   display: flex;
    margin-inline-end: 12%;
    margin-top: 1.2rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 8vh;
 }
 
 #social_midia a{
-   text-decoration: none;
-   color: var(--font-foo);
+   color: var(--bg-main);
 }
 
 #dev-content{
@@ -136,6 +138,5 @@ body{
    color: var(--font-dev);
    padding-top: 10px;
    padding-bottom: 15px;
-   text-decoration: none;
    font-size: 12px;
 }

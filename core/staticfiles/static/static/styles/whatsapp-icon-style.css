@@ -1,0 +1,10 @@
+#whats-button{
+   position: fixed;
+   bottom: 1rem;
+   right: 2rem;
+   cursor: pointer;
+}
+
+#whats-icon{
+   width: 100px;
+}
