@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>{% block title %}ACO Advocacia{% endblock  %}</title>
+   <link rel="icon" type="image/x-icon" href="{% static 'icons/favicon.ico' %}">
+   <link rel="stylesheet" href="{% static 'styles/global-style.css' %}">
+   <link rel="stylesheet" href="{% static 'styles/index-style.css' %}">
+   <link rel="stylesheet" href="{% static 'styles/contact-style.css' %}">
+   <link rel="stylesheet" href="{% static 'styles/form-style.css' %}">
+   <link rel="stylesheet" href="{% static 'styles/politics-style.css' %}">
+   <link rel="stylesheet" href="{% static 'styles/solutions-style.css' %}">
+   <link rel="stylesheet" href="{% static 'styles/agency-style.css' %}">
+   <link rel="stylesheet" href="{% static 'styles/whatsapp-icon-style.css' %}">
+   <link rel="stylesheet" href="{% static 'styles/instagram-icon-style.css' %}">
+</head>
+<body>
+   <header >
+      <div id="header-content">
+         <div id="logo">
+            <a href="{% url 'index' %}"><img id="logo-img" src="{% static 'imagens/logo.png' %}" alt="Logo"></a>
+         </div>
+         <nav id="content-menu">
+            <span id="content-link" >
+               <a href="{% url 'index' %}">Home</a>
+               <a href="{% url 'agency' %}">Atuação</a>
+               <a href="{% url 'solutions' %}">Soluções Empresariais</a>
+               <a href="{% url 'politics' %}">Politicas de Privacidade</a>
+               <a href="{% url 'contact' %}">Contato</a>
+            </span>
+         </nav>
+      </div>
+   </header>
+   <main>
+      <div id="main-content">
+         {% block content %}
+
+
+         {% endblock  %}
+         <div id="whats-button"><a href="https://api.whatsapp.com/send?phone=5511969027531" target="_blank"><img id="whats-icon" src="{% static 'icons/whatsapp-icon-button.svg' %}" alt="Whatsapp"></a></div>
+      </div>
+   </main>
+   <footer>
+      <section id="foo-content">
+         <div id="footer-content">
+            <div>
+               <img src="{% static 'imagens/logo.png' %}" alt="Logo" id="Logo-footer">
+            </div>
+            <div id="footer-menu">
+               <a href="{% url 'index' %}">Home</a>
+               <a href="{% url 'agency' %}">Atuação</a>
+               <a href="{% url 'solutions' %}">Soluções Empresariais</a>
+               <a href="{% url 'politics' %}">Politicas de Privacidade</a>
+               <a href="{% url 'contact' %}">Contato</a>
+            </div>
+            <div id="social_midia" id="insta-button">
+               <div id="insta-div">
+                  <a id="insta-icon-a" href="https://www.instagram.com/acoadvocacia?igsh=MTZkYzJkb2JlZTQwNw==" target="_blank"><img id="insta-icon-img" src="{% static 'icons/instagram-icon.svg' %}" alt="Whatsapp" href="https://www.instagram.com/acoadvocacia?igsh=MTZkYzJkb2JlZTQwNw==" target="_blank">Instagram</a>
+               </div>
+            </div>
+         </div>
+         <div id="dev-content">
+            <p>Direitos Reservados ACO Advocacia © 2024</p>
+            <a href="politicas.html"> Politicas de Privacidade</a>
+         </div>
+      </section>   
+   </footer>
+</body>
+</html>

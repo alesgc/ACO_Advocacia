@@ -49,16 +49,19 @@
    font-weight: bold;
 }
 
-.consultants p{
+.contentconsultants{
+   display: flex;
+   align-items: flex-start;
+   gap: 1em;
    padding-left: 3rem;
 }
 
 .whats-consultants{
-   width: 5%;
+   width: 25px;
 }
 
 .certify-consultants{
-   width: 6%;
+   width: 30px;
 }
 
 .opening-hours{

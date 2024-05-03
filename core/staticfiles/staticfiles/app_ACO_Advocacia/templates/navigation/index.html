@@ -1,0 +1,113 @@
+{% extends "base_page.html" %}
+
+{% load static %}
+
+{% block title %}ACO Advocacia - Home{% endblock  %}
+
+{% block content %}
+   
+<section class="section-content" id="presentation-section">
+   <div id="content-specialist">
+      <h1>Advocacia</h1>
+      <h1>Especializada</h1>
+      <p>Fale agora com um especialista.</p>
+      <div class="button-specialist">
+         <button type="button"><a href="{% url 'agency'%}">SAIBA MAIS!</a></button>
+         <button type="button"><a href="{% url 'solutions'%}">SAIBA MAIS P/  EMPRESA!</a></button>
+      </div>
+   </div>
+   <div id="emergency-content">
+      <p>Atendimento emergencial 24 horas.</p>
+      <p>Prisão em flagrante e acompanhamento em delegacia.</p>
+      <div class="button-specialist">
+         <button type="button"><a>Clique Aqui!</a></button>
+      </div>
+   </div>
+</section>
+<section class="section-content">
+
+      <h2>Sobre nós</h2>
+      <p>
+          Seja bem-vindo, a ACO Advocacia, um escritório juridico dedicado a fornecer serviços de excelência em diversas áreas do direito.</p>
+          <p>Nossa equipe de advogados altamente competentes possui vasta experiência em direito civil, criminal, trabalhista e previdenciário.
+      </p>
+      <p>
+          Na ACO Advocacia acreditamos que a competência é a base para construir relações de confiança duradouras com nossos clientes. Nossos profissionais são apaixonados por buscar a excelência em cada caso, oferecendo análises juridicas sólidas, estratégicas e eficazes.
+      </p>
+      <p>
+          Entendemos que cada cliente é único, e é por isso que personalizamos nossos serviços para atender às suas necessidades específicas. Ao escolher, a ACO Advocacia, você está optando por uma equipe que valoriza a ética, a transparência e a dedicação na busca pelos melhores resultados legais.
+      </p>
+      <p>
+          Confie na ACO Advocacia para representação legal de qualidade, onde a competência se encontra com a dedicação para alcançar os melhores resultados para você, e seus interesses legais.
+      </p>
+</section>
+<section class="section-content">
+
+   <div class="contact-content">
+      <div class="consultants-content">
+         <h3>SOLICITE UMA CONSULTA</h3>
+         <div class="address">
+            <h4>ENDEREÇO</h4>
+            <div class="address-content">
+               <div class="address-img">
+                  <img src="{% static 'icons/share-location-icon.svg' %}" alt="location">
+               </div>
+               <div class="address-info">
+                  <p>Av. Antônio Mathias de Camargo, 128</p>
+                  <p>Sala 12 Centro - Cotia</p>
+                  <p>CEP: 06700-250</p>
+               </div>
+            </div>   
+         </div>
+         <div class="consultants">
+            <h4>CONTATO</h4>
+            <div>   
+               <div>
+                  <h5>Alessandra Nepomuceno de Oliveira</h5>
+                     <p><img src="{% static 'icons/certify-icon.svg' %}" alt="certify"> OAB/SP 398.672</p>
+                     <p><img class="whats-consultants" src="{% static 'icons/whatsapp-icon-contact.svg' %}" alt="phone">   12 99642-9191</p>
+               </div>
+               <div>
+                  <h5>Jeferson Mendes de Andrade</h5>
+                     <p><img src="{% static 'icons/certify-icon.svg' %}" alt="certify">   OAB/SP 419.868</p>
+                     <p><img class="whats-consultants" src="{% static 'icons/whatsapp-icon-contact.svg' %}" alt="phone">   11 97119-9647</p>
+               </div>
+               <div>
+                  <h5>Luciana Gonçalves de Camargo</h5>
+                     <p><img src="{% static 'icons/certify-icon.svg' %}" alt="certify">   OAB/SP 430.670</p>
+                     <p><img class="whats-consultants" src="{% static 'icons/whatsapp-icon-contact.svg' %}" alt="phone">   1197290-8196</p>
+               </div>
+            </div>   
+         </div>  
+         <div class="opening-hours">
+            <h4>HORÁRIO DE ATENDIMENTO</h4>
+            <div>
+               <p>SEGUNDA à Sexta das 9:00  as 18:00</p>
+               <p>Em Caso de Emergências</p>
+               <p>SEGUNDA A DOMINGO - 24HS</p>
+            </div>
+         </div>
+      </div>
+
+      <div id="content-form">
+         <form method="POST" action=".">
+            {% csrf_token %}
+            <label>Nome: </label>
+            {{ form.name }}
+            <label>Telefone: </label>
+            {{ form.phone }}
+            <label>Email: </label>
+            {{ form.email }}
+            <label>Assunto: </label>
+            {{ form.topic }}
+
+            <button>Enviar</button>
+         </form>
+      </div>
+
+   </div>
+
+</section>
+
+{% endblock  %}
+
