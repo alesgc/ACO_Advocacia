@@ -1,0 +1,23 @@
+#politics-content{
+   display: grid;
+   gap: 1em;
+}
+
+#politics-content h1{
+   font-size: 3rem;
+   margin-bottom: 1.5rem;
+}
+
+#politics-content h2{
+   font-size: 2rem;
+   padding-left: 1em;
+}
+
+#politics-content h3{
+   padding-left: 3em;
+}
+
+#politics-content p{
+   padding-left: 4em;
+   text-align: justify;
+}

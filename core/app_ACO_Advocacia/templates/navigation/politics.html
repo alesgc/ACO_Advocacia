@@ -1,92 +1,126 @@
 {% extends "base_page.html" %}
 
+{% load static %}
+
+
 {% block title %}ACO Advocacia - Politicas{% endblock  %}
-
+{% block style %}
+<link rel="stylesheet" href="{% static 'styles/politics-style.css' %}">
+{% endblock %}
 {% block content %}
-   
+
 <section class="section-content" id="politics-content">
-   <div>
-      <div>
-         <h1>Política de Privacidade da ACO Advocacia</h1>
-         <p>A ACO Advocacia, comprometida com a proteção da privacidade e dos dados pessoais de seus clientes, parceiros e usuários, adota esta Política de Privacidade em conformidade com a Lei Geral de Proteção de Dados (LGPD), Lei nº 13.709/2018. Esta política detalha como coletamos, processamos, armazenamos e protegemos dados pessoais.</p>
-      </div>
-      <div>
-         <h2>1. Definições</h2>
-         <p>Para os fins desta Política de Privacidade, são adotadas as definições estabelecidas pela LGPD:</p>
+    <div>
+        <div>
+            <h1>Política de Privacidade da ACO Advocacia</h1>
+            <p>A ACO Advocacia, comprometida com a proteção da privacidade e dos dados pessoais de seus clientes,
+                parceiros e usuários, adota esta Política de Privacidade em conformidade com a Lei Geral de Proteção de
+                Dados (LGPD), Lei nº 13.709/2018. Esta política detalha como coletamos, processamos, armazenamos e
+                protegemos dados pessoais.</p>
+        </div>
+        <div>
+            <h2>1. Definições</h2>
+            <p>Para os fins desta Política de Privacidade, são adotadas as definições estabelecidas pela LGPD:</p>
 
-         <p>Dados Pessoais: Qualquer informação relacionada a uma pessoa física identificada ou identificável (Art. 5, I).</p>
-         <p>Dados Pessoais Sensíveis: Dados pessoais sobre origem racial ou étnica, convicção religiosa, opinião política, filiação a sindicato ou a organização de caráter religioso, filosófico ou político, dados referentes à saúde ou à vida sexual, dados genéticos ou biométricos (Art. 5, II).</p>
-         <p>Titular de Dados: Pessoa física a quem os dados pessoais se referem (Art. 5, V).</p>
-         <p>Controlador: Pessoa natural ou jurídica, de direito público ou privado, a quem competem as decisões referentes ao tratamento de dados pessoais (Art. 5, VI).</p>
-         <p>Operador: Pessoa natural ou jurídica, de direito público ou privado, que realiza o tratamento de dados pessoais em nome do controlador (Art. 5, VIII).</p>
-      </div>
-      <div>
-         <h2>2. Coleta de Dados Pessoais</h2>
-         <p>Coletamos dados pessoais fornecidos pelos titulares durante a contratação de serviços jurídicos, bem como por meio de interações com nossos canais de comunicação, formulários online e interações presenciais. Dados pessoais coletados podem incluir, mas não estão limitados a:</p>
+            <p>Dados Pessoais: Qualquer informação relacionada a uma pessoa física identificada ou identificável (Art.
+                5, I).</p>
+            <p>Dados Pessoais Sensíveis: Dados pessoais sobre origem racial ou étnica, convicção religiosa, opinião
+                política, filiação a sindicato ou a organização de caráter religioso, filosófico ou político, dados
+                referentes à saúde ou à vida sexual, dados genéticos ou biométricos (Art. 5, II).</p>
+            <p>Titular de Dados: Pessoa física a quem os dados pessoais se referem (Art. 5, V).</p>
+            <p>Controlador: Pessoa natural ou jurídica, de direito público ou privado, a quem competem as decisões
+                referentes ao tratamento de dados pessoais (Art. 5, VI).</p>
+            <p>Operador: Pessoa natural ou jurídica, de direito público ou privado, que realiza o tratamento de dados
+                pessoais em nome do controlador (Art. 5, VIII).</p>
+        </div>
+        <div>
+            <h2>2. Coleta de Dados Pessoais</h2>
+            <p>Coletamos dados pessoais fornecidos pelos titulares durante a contratação de serviços jurídicos, bem como
+                por meio de interações com nossos canais de comunicação, formulários online e interações presenciais.
+                Dados pessoais coletados podem incluir, mas não estão limitados a:</p>
 
-         <p>Dados de identificação e contato, como nome, endereço, telefone e e-mail.</p>
-         <p>Dados relacionados a processos judiciais e administrativos, incluindo documentos, depoimentos e provas.</p>
-         <p>Dados coletados automaticamente durante a navegação em nosso site, como cookies e dados de sessões.</p>
-      </div>
-      <div>
-         <h2>3. Finalidades do Tratamento de Dados</h2>
-         <p>Os dados pessoais coletados são tratados para finalidades legítimas, específicas e necessárias, em conformidade com as hipóteses legais previstas na LGPD, como:</p>
+            <p>Dados de identificação e contato, como nome, endereço, telefone e e-mail.</p>
+            <p>Dados relacionados a processos judiciais e administrativos, incluindo documentos, depoimentos e
+                provas.</p>
+            <p>Dados coletados automaticamente durante a navegação em nosso site, como cookies e dados de sessões.</p>
+        </div>
+        <div>
+            <h2>3. Finalidades do Tratamento de Dados</h2>
+            <p>Os dados pessoais coletados são tratados para finalidades legítimas, específicas e necessárias, em
+                conformidade com as hipóteses legais previstas na LGPD, como:</p>
 
-         <p>Execução de contrato com o titular (Art. 7, V).</p>
-         <p>Cumprimento de obrigação legal ou regulatória (Art. 7, II).</p>
-         <p>Exercício regular de direitos em processos judiciais, administrativos ou arbitrais (Art. 7, VI).</p>
-         <p>Interesse legítimo do controlador ou de terceiros (Art. 7, IX), observados os direitos e liberdades do titular.</p>
-      </div>
-      <div>
-         <h2>4. Compartilhamento de Dados Pessoais</h2>
-         <p>Os dados pessoais podem ser compartilhados com:</p>
+            <p>Execução de contrato com o titular (Art. 7, V).</p>
+            <p>Cumprimento de obrigação legal ou regulatória (Art. 7, II).</p>
+            <p>Exercício regular de direitos em processos judiciais, administrativos ou arbitrais (Art. 7, VI).</p>
+            <p>Interesse legítimo do controlador ou de terceiros (Art. 7, IX), observados os direitos e liberdades do
+                titular.</p>
+        </div>
+        <div>
+            <h2>4. Compartilhamento de Dados Pessoais</h2>
+            <p>Os dados pessoais podem ser compartilhados com:</p>
 
-         <p>Autoridades judiciais ou administrativas em cumprimento de obrigações legais.</p>
-         <p>Parceiros de negócio ou operadores para execução de serviços jurídicos ou administrativos, mediante contrato.</p>
-         <p>Empresas prestadoras de serviços de tecnologia da informação e infraestrutura para fins de armazenamento e processamento de dados.</p>
-      </div>
-      <div>
-         <h2>5. Segurança de Dados</h2>
-         <p>Adotamos medidas técnicas e administrativas para proteger os dados pessoais contra acesso não autorizado, vazamento, perda ou destruição, conforme determinado pela LGPD (Art. 46). Tais medidas incluem:</p>
+            <p>Autoridades judiciais ou administrativas em cumprimento de obrigações legais.</p>
+            <p>Parceiros de negócio ou operadores para execução de serviços jurídicos ou administrativos, mediante
+                contrato.</p>
+            <p>Empresas prestadoras de serviços de tecnologia da informação e infraestrutura para fins de armazenamento
+                e processamento de dados.</p>
+        </div>
+        <div>
+            <h2>5. Segurança de Dados</h2>
+            <p>Adotamos medidas técnicas e administrativas para proteger os dados pessoais contra acesso não autorizado,
+                vazamento, perda ou destruição, conforme determinado pela LGPD (Art. 46). Tais medidas incluem:</p>
 
-         <p>Criptografia e pseudonimização de dados pessoais.</p>
-         <p>Controle de acesso restrito a informações sensíveis.</p>
-         <p>Monitoramento e auditoria de acessos e atividades.</p>
-      </div>
-      <div>
-         <h2>6. Retenção de Dados</h2>
-         <p>Os dados pessoais são retidos pelo período necessário para o cumprimento das finalidades previstas nesta política ou conforme determinado por leis específicas, respeitando as normas de prescrição e decadência aplicáveis.</p>
-      </div>
-      <div>
-         <h2>7. Direitos dos Titulares</h2>
-         <p>Os titulares de dados têm direitos previstos na LGPD, incluindo:</p>
+            <p>Criptografia e pseudonimização de dados pessoais.</p>
+            <p>Controle de acesso restrito a informações sensíveis.</p>
+            <p>Monitoramento e auditoria de acessos e atividades.</p>
+        </div>
+        <div>
+            <h2>6. Retenção de Dados</h2>
+            <p>Os dados pessoais são retidos pelo período necessário para o cumprimento das finalidades previstas nesta
+                política ou conforme determinado por leis específicas, respeitando as normas de prescrição e decadência
+                aplicáveis.</p>
+        </div>
+        <div>
+            <h2>7. Direitos dos Titulares</h2>
+            <p>Os titulares de dados têm direitos previstos na LGPD, incluindo:</p>
 
-         <p>Direito de Acesso: Solicitar acesso aos dados pessoais (Art. 18, II).
-         <p>Direito de Retificação: Solicitar correção de dados pessoais incompletos ou inexatos (Art. 18, III).</p>
-         <p>Direito de Exclusão: Solicitar eliminação dos dados pessoais, observadas as exceções legais (Art. 18, XIV).</p>
-         <p>Direito de Portabilidade: Solicitar transferência dos dados pessoais a outro controlador, quando tecnicamente viável (Art. 18, V).</p>
-         <p>Direito de Oposição: Opor-se ao tratamento de dados pessoais quando realizado com base em interesse legítimo ou para fins de marketing direto (Art. 18, IX).</p>
-      </div>
-      <div>
-         <h2>8. Exercício dos Direitos dos Titulares</h2>
-         <p>Os titulares de dados podem exercer seus direitos entrando em contato conosco através das informações de contato fornecidas no final desta política.</p>
-      </div>
-      <div>
-         <h2>9. Alterações à Política de Privacidade</h2>
-         <p>A ACO Advocacia pode revisar e atualizar esta Política de Privacidade periodicamente, em consonância com as exigências legais. Quaisquer alterações serão comunicadas aos titulares de dados por meio de notificação adequada.</p>
-      </div>
-      <div>
-         <h2>10. Informações de Contato</h2>
-         <p>Se você tiver dúvidas ou preocupações relacionadas a esta política de privacidade ou ao tratamento de seus dados pessoais, entre em contato conosco:</p>
+            <h3>Direito de Acesso:</h3>
+            <p>Solicitar acesso aos dados pessoais (Art. 18, II).
+            <h3>Direito de Retificação:</h3>
+            <p>Solicitar correção de dados pessoais incompletos ou inexatos (Art. 18, III).</p>
+            <h3>Direito de Exclusão:</h3>
+            <p>Solicitar eliminação dos dados pessoais, observadas as exceções legais (Art. 18, XIV).</p>
+            <h3>Direito de Portabilidade:</h3>
+            <p>Solicitar transferência dos dados pessoais a outro controlador, quando tecnicamente viável (Art. 18,
+                V).</p>
+            <h3>Direito de Oposição:</h3>
+            <p>Opor-se ao tratamento de dados pessoais quando realizado com base em interesse legítimo ou para fins de
+                marketing direto (Art. 18, IX).</p>
+        </div>
+        <div>
+            <h2>8. Exercício dos Direitos dos Titulares</h2>
+            <p>Os titulares de dados podem exercer seus direitos entrando em contato conosco através das informações de
+                contato fornecidas no final desta política.</p>
+        </div>
+        <div>
+            <h2>9. Alterações à Política de Privacidade</h2>
+            <p>A ACO Advocacia pode revisar e atualizar esta Política de Privacidade periodicamente, em consonância com
+                as exigências legais. Quaisquer alterações serão comunicadas aos titulares de dados por meio de
+                notificação adequada.</p>
+        </div>
+        <div>
+            <h2>10. Informações de Contato</h2>
+            <p>Se você tiver dúvidas ou preocupações relacionadas a esta política de privacidade ou ao tratamento de
+                seus dados pessoais, entre em contato conosco:</p>
 
-         <p>ACO Advocacia</p>
-         <p>Endereço:</p>
-         <p>Av. Antônio Mathias de Camargo, 128</p>
-         <p>Sala 12 Centro - Cotia</p>
-         <p>Telefone: [Insira o telefone aqui]</p>
-         <p>E-mail: [Insira o e-mail aqui]</p>
-      </div>
-   </div>
+            <p>ACO Advocacia</p>
+            <p>Endereço:</p>
+            <p>Av. Antônio Mathias de Camargo, 128</p>
+            <p>Sala 12 Centro - Cotia</p>
+            <p>Telefone: [Insira o telefone aqui]</p>
+            <p>E-mail: [Insira o e-mail aqui]</p>
+        </div>
+    </div>
 </section>
 
 {% endblock  %}

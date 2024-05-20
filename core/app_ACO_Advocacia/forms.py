@@ -1,8 +1,14 @@
 from django import forms
-from app_ACO_Advocacia.models import ContactPerson
+from .models import ContactPerson
+
 
 class FormContact(forms.ModelForm):
-    
     class Meta:
         model = ContactPerson
-        fields = '__all__'
+        fields = [
+            'name',
+            'phone',
+            'email',
+            'subject',
+            'topic'
+        ]

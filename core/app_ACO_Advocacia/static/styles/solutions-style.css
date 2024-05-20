@@ -1,3 +1,10 @@
+.section-content{
+   display: flex;
+   padding: 3rem;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
 #solutions-content{
    display: grid;
    gap: 1em;
@@ -12,6 +19,7 @@
    font-size: 2rem;
    padding-left: 1em;
 }
+
 #solutions-content h3{
    padding-left: 3em;
 }

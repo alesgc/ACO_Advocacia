@@ -1,60 +1,111 @@
 {% extends "base_page.html" %}
 
-{% block title %}ACO Advocacia - Atuação{% endblock  %}
+{% load static %}
 
+{% block title %}ACO Advocacia - Atuação{% endblock  %}
+{% block style %}
+<link rel="stylesheet" href="{% static 'styles/agency-style.css' %}">
+{% endblock %}
 {% block content %}
-   
+
 <section class="section-content" id="agency-content">
-   <div>
-      <div>
-         <div>
-            <h1>ACO Advocacia</h1>
-         </div>
-         <div>
-            <p>Seja bem-vindo, a ACO Advocacia, um escritório jurídico dedicado a fornecer serviços de excelência em diversas áreas do direito. Nossa equipe de advogados altamente competentes possui vasta experiência em direito civil, criminal, trabalhista e previdenciário, garantindo uma ampla cobertura para atender às diversas necessidades jurídicas de nossos clientes.</p>
-         </div>
-         <div>
-            <h2>Nossa Filosofia de Trabalho</h2>
-            <p>Na ACO Advocacia, acreditamos que a competência é a base para construir relações de confiança duradouras com nossos clientes. Nossa equipe é composta por profissionais apaixonados que buscam a excelência em cada caso, oferecendo análises jurídicas sólidas, estratégicas e eficazes. Valorizamos a ética, a transparência e a dedicação em todos os aspectos do nosso trabalho, sempre com o objetivo de alcançar os melhores resultados legais para nossos clientes.</p>
-         </div>
-         <div>
-            <h2>Personalização de Serviços</h2>
-            <p>Entendemos que cada cliente é único, e é por isso que personalizamos nossos serviços para atender às suas necessidades específicas. Trabalhamos em estreita colaboração com nossos clientes para entender suas preocupações e objetivos, garantindo que cada estratégia jurídica seja cuidadosamente adaptada às suas circunstâncias.</p>
-         </div>
-         <div>
-            <h2>Áreas de Atuação</h2>
-            <h3>Direito Civil e Direito de Família:</h3> <p>Nossa equipe de direito civil lida com uma ampla variedade de casos, incluindo disputas contratuais, questões de propriedade, responsabilidade civil, sucessões e muito mais. Estamos comprometidos em fornecer soluções eficazes e eficientes para proteger os direitos de nossos clientes.<p>
-            <h3>Direito Criminal:</h3> <p>Oferecemos representação robusta em casos criminais, desde investigações preliminares até julgamentos e recursos. Nossa equipe trabalha incansavelmente para garantir a defesa de nossos clientes, protegendo seus direitos e buscando os melhores resultados possíveis.</p>
-            <h3>Direito Trabalhista:</h3> <p>Na área trabalhista, defendemos tanto empregadores quanto empregados em questões como rescisões contratuais, assédio, discriminação, condições de trabalho inadequadas e outros conflitos relacionados ao ambiente de trabalho.</p>
-            <h3>Direito Previdenciário:</h3> <p>Auxiliamos nossos clientes em questões relacionadas à previdência social, incluindo aposentadorias, benefícios, revisões de benefícios e outras disputas previdenciárias.</p>
-         </div>
-         <div>
-            <h2>Serviços Específicos Oferecidos</h2>
-            <p>Além das áreas de atuação principais mencionadas, a ACO Advocacia oferece uma variedade de serviços específicos para atender às necessidades únicas de cada cliente:</p>
-            <h3>Consultoria Jurídica:</h3> <p>Oferecemos consultoria jurídica personalizada para orientar nossos clientes em questões legais complexas e auxiliá-los na tomada de decisões informadas.</p>
-            <h3>Mediação e Arbitragem:</h3> <p>Promovemos a resolução de disputas por meio de métodos alternativos, como a mediação e a arbitragem, buscando soluções amistosas e eficazes para nossos clientes.</p>
-            <h3>Elaboração de Contratos:</h3> <p>Nossa equipe é experiente na elaboração e revisão de contratos de diversos tipos, garantindo que os interesses de nossos clientes estejam adequadamente protegidos.</p>
-            <h3>Assessoria Empresarial:</h3> <p>Prestamos assessoria jurídica a empresas de todos os tamanhos em questões relacionadas à conformidade legal, governança corporativa, contratos comerciais e outras questões empresariais.<p>
-            <h3>Recuperação de Crédito:</h3> <p>Ajudamos nossos clientes a recuperar créditos devidos por meio de estratégias eficazes de cobrança judicial e extrajudicial.</p>
+    <div>
+        <div>
+            <div>
+                <h1>ACO Advocacia</h1>
+            </div>
+            <div>
+                <p>Seja bem-vindo, a ACO Advocacia, um escritório jurídico dedicado a fornecer serviços de excelência em
+                    diversas áreas do direito. Nossa equipe de advogados altamente competentes possui vasta experiência
+                    em direito civil, criminal, trabalhista e previdenciário, garantindo uma ampla cobertura para
+                    atender às diversas necessidades jurídicas de nossos clientes.</p>
+            </div>
+            <div>
+                <h2>Nossa Filosofia de Trabalho</h2>
+                <p>Na ACO Advocacia, acreditamos que a competência é a base para construir relações de confiança
+                    duradouras com nossos clientes. Nossa equipe é composta por profissionais apaixonados que buscam a
+                    excelência em cada caso, oferecendo análises jurídicas sólidas, estratégicas e eficazes. Valorizamos
+                    a ética, a transparência e a dedicação em todos os aspectos do nosso trabalho, sempre com o objetivo
+                    de alcançar os melhores resultados legais para nossos clientes.</p>
+            </div>
+            <div>
+                <h2>Personalização de Serviços</h2>
+                <p>Entendemos que cada cliente é único, e é por isso que personalizamos nossos serviços para atender às
+                    suas necessidades específicas. Trabalhamos em estreita colaboração com nossos clientes para entender
+                    suas preocupações e objetivos, garantindo que cada estratégia jurídica seja cuidadosamente adaptada
+                    às suas circunstâncias.</p>
+            </div>
+            <div>
+                <h2>Áreas de Atuação</h2>
+                <h3>Direito Civil e Direito de Família:</h3>
+                <p>Nossa equipe de direito civil lida com uma ampla variedade de casos, incluindo disputas contratuais,
+                    questões de propriedade, responsabilidade civil, sucessões e muito mais. Estamos comprometidos em
+                    fornecer soluções eficazes e eficientes para proteger os direitos de nossos clientes.
+                <p>
+                <h3>Direito Criminal:</h3>
+                <p>Oferecemos representação robusta em casos criminais, desde investigações preliminares até julgamentos
+                    e recursos. Nossa equipe trabalha incansavelmente para garantir a defesa de nossos clientes,
+                    protegendo seus direitos e buscando os melhores resultados possíveis.</p>
+                <h3>Direito Trabalhista:</h3>
+                <p>Na área trabalhista, defendemos tanto empregadores quanto empregados em questões como rescisões
+                    contratuais, assédio, discriminação, condições de trabalho inadequadas e outros conflitos
+                    relacionados ao ambiente de trabalho.</p>
+                <h3>Direito Previdenciário:</h3>
+                <p>Auxiliamos nossos clientes em questões relacionadas à previdência social, incluindo aposentadorias,
+                    benefícios, revisões de benefícios e outras disputas previdenciárias.</p>
+            </div>
+            <div>
+                <h2>Serviços Específicos Oferecidos</h2>
+                <p>Além das áreas de atuação principais mencionadas, a ACO Advocacia oferece uma variedade de serviços
+                    específicos para atender às necessidades únicas de cada cliente:</p>
+                <h3>Consultoria Jurídica:</h3>
+                <p>Oferecemos consultoria jurídica personalizada para orientar nossos clientes em questões legais
+                    complexas e auxiliá-los na tomada de decisões informadas.</p>
+                <h3>Mediação e Arbitragem:</h3>
+                <p>Promovemos a resolução de disputas por meio de métodos alternativos, como a mediação e a arbitragem,
+                    buscando soluções amistosas e eficazes para nossos clientes.</p>
+                <h3>Elaboração de Contratos:</h3>
+                <p>Nossa equipe é experiente na elaboração e revisão de contratos de diversos tipos, garantindo que os
+                    interesses de nossos clientes estejam adequadamente protegidos.</p>
+                <h3>Assessoria Empresarial:</h3>
+                <p>Prestamos assessoria jurídica a empresas de todos os tamanhos em questões relacionadas à conformidade
+                    legal, governança corporativa, contratos comerciais e outras questões empresariais.
+                <p>
+                <h3>Recuperação de Crédito:</h3>
+                <p>Ajudamos nossos clientes a recuperar créditos devidos por meio de estratégias eficazes de cobrança
+                    judicial e extrajudicial.</p>
+            </div>
+            <div>
+                <h2>Nosso Compromisso com o Cliente</h2>
+                <p>Na ACO Advocacia, nosso compromisso com o cliente vai além da representação legal. Esforçamo-nos para
+                    manter nossos clientes informados sobre o progresso de seus casos e garantimos que suas perguntas e
+                    preocupações sejam respondidas assim que possível. Acreditamos na importância de uma comunicação
+                    aberta e honesta com nossos clientes, construindo relacionamentos duradouros baseados em confiança
+                    mútua.</p>
+            </div>
+            <div>
+                <h2>Equipe de Profissionais</h2>
+                <p>Nossa equipe de advogados é composta por profissionais altamente qualificados e experientes em suas
+                    respectivas áreas de atuação. Além de suas credenciais acadêmicas e experiência prática, nossos
+                    advogados têm um profundo compromisso com a busca pela justiça e a defesa dos interesses de nossos
+                    clientes.</p>
+            </div>
+            <div>
+                <h2>Tecnologia e Inovação</h2>
+                <p>Na ACO Advocacia, incorporamos tecnologia e inovação em nossa prática para melhorar a eficiência e a
+                    eficácia dos nossos serviços. Utilizamos ferramentas avançadas de pesquisa jurídica e gestão de
+                    casos para oferecer soluções rápidas e precisas aos nossos clientes.</p>
+            </div>
+            <div>
+                <h2>Vantagens</h2>
+                <p>Ao escolher a ACO Advocacia, você está optando por uma equipe de profissionais dedicados que
+                    trabalham incansavelmente para fornecer representação legal de qualidade. Nossa abordagem
+                    personalizada, aliada à nossa paixão pela busca pela justiça, garante que seus interesses legais
+                    sejam defendidos com a máxima competência e dedicação. Confie na ACO Advocacia para alcançar os
+                    melhores resultados legais para você e seus interesses.</p>
+            </div>
         </div>
-         <div>
-            <h2>Nosso Compromisso com o Cliente</h2>
-            <p>Na ACO Advocacia, nosso compromisso com o cliente vai além da representação legal. Esforçamo-nos para manter nossos clientes informados sobre o progresso de seus casos e garantimos que suas perguntas e preocupações sejam respondidas assim que possível. Acreditamos na importância de uma comunicação aberta e honesta com nossos clientes, construindo relacionamentos duradouros baseados em confiança mútua.</p>
-         </div>
-         <div>
-            <h2>Equipe de Profissionais</h2>
-            <p>Nossa equipe de advogados é composta por profissionais altamente qualificados e experientes em suas respectivas áreas de atuação. Além de suas credenciais acadêmicas e experiência prática, nossos advogados têm um profundo compromisso com a busca pela justiça e a defesa dos interesses de nossos clientes.</p>
-         </div>
-         <div>
-            <h2>Tecnologia e Inovação</h2>
-            <p>Na ACO Advocacia, incorporamos tecnologia e inovação em nossa prática para melhorar a eficiência e a eficácia dos nossos serviços. Utilizamos ferramentas avançadas de pesquisa jurídica e gestão de casos para oferecer soluções rápidas e precisas aos nossos clientes.</p>
-         </div>
-         <div>
-            <h2>Vantagens</h2>
-            <p>Ao escolher a ACO Advocacia, você está optando por uma equipe de profissionais dedicados que trabalham incansavelmente para fornecer representação legal de qualidade. Nossa abordagem personalizada, aliada à nossa paixão pela busca pela justiça, garante que seus interesses legais sejam defendidos com a máxima competência e dedicação. Confie na ACO Advocacia para alcançar os melhores resultados legais para você e seus interesses.</p>
-         </div>
-      </div>
-   </div>
+    </div>
 </section>
 
 {% endblock  %}

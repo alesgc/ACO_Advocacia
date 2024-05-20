@@ -1,3 +1,10 @@
+.section-content{
+   display: flex;
+   padding: 3rem;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
 .contact-content{
       display: inline-flex;
       align-items: flex-start;

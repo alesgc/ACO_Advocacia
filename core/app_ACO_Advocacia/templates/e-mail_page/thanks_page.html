@@ -1,0 +1,22 @@
+{% extends "navigation/contact.html" %}
+
+{% load static %}
+
+{% block thanksform %}
+<div id="content-mail">
+    <div id=content-body-mail">
+        <h1>Obgrigado Pelo Contato</h1>
+
+        <h2>Seus dados de contato:</h2>
+        <h3>Nome:</h3>
+        <p>{{ data_contact.name }}</p>
+        <h3>E-mail:</h3>
+        <p>{{ data_contact.email }}</p>
+        <h3>Telefone:</h3>
+        <p>{{ data_contact.phone }}</p>
+        <h3>Seu ticket de atendimento:</h3>
+        <h4>{{ data_contact.topic }}</h4>
+    </div>
+</div>
+
+{% endblock  %}

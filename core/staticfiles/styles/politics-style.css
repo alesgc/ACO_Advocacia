@@ -1,3 +1,10 @@
+.section-content{
+   display: flex;
+   padding: 3rem;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
 #politics-content{
    display: grid;
    gap: 1em;
@@ -11,6 +18,10 @@
 #politics-content h2{
    font-size: 2rem;
    padding-left: 1em;
+}
+
+#politics-content h3{
+   padding-left: 3em;
 }
 
 #politics-content p{

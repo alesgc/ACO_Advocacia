@@ -1,0 +1,32 @@
+{% extends "navigation/contact.html" %}
+
+{% load static %}
+
+{% block style %}
+
+{% endblock %}
+
+{% block sendform %}
+
+<div id="content-form">
+    <form method="POST" action=".">
+        {% csrf_token %}
+        <label>Nome: </label>
+        {{ form.name }}
+        <label>Telefone: </label>
+        {{ form.phone }}
+        <label>Email: </label>
+        {{ form.email }}
+        <label>Assunto: </label>
+        {{ form.subject }}
+        <label>Relato: </label>
+        {{ form.topic }}
+
+        <button type="submit" value="POST">Enviar</button>
+    </form>
+</div>
+
+</div>
+</div>
+
+{% endblock  %}

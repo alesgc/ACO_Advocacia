@@ -1,3 +1,10 @@
+.section-content{
+   display: flex;
+   padding: 3rem;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
 #agency-content{
    display: grid;
    gap: 1em;
